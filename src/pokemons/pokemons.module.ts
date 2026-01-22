@@ -10,5 +10,6 @@ import { PokemonsService } from './pokemons.service';
   imports: [
     MongooseModule.forFeature([{ name: Pokemon.name, schema: PokemonSchema }]),
   ],
+  exports: [MongooseModule],
 })
 export class PokemonsModule {}
